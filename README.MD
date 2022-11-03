@@ -15,7 +15,7 @@ arrow function
 
 
 
-4:44 - Basic Syntax
+3. Basic Syntax
 const express = require ('express)
 
 const app = express();
@@ -23,7 +23,7 @@ const app = express();
 app.get('/', (re))
 
 
-5:58 - Basic Route Handling
+4. Basic Route Handling
 app.get('/',function(req, res){
     //Fecth from database
     // Load pages
@@ -31,7 +31,7 @@ app.get('/',function(req, res){
     // Full access to request & respone
 })
 
-7:33 - Middleware Intro
+5. Middleware Intro
 are function that have access to the request and response object.
 
 execute any code 
@@ -39,18 +39,68 @@ Make changes to the req/res object
 end response cylce
 Call the middleware in the stack
 
-8:41 - Installations and Setup
+6. Installations and Setup
 
 
-13:05 - Creating Routes
+7. Creating Routes
+const express = require('express')
+
+const app = express();
+
+app.get('/', (req, res) => {
+   res.send('<h1>Hello World</h1>')
+})
+
+const PORT =  process.env.PORT || 3000;// take note
+
+app.listen(PORT, ()=> console.log(`Server Started on port ${PORT}`));
 
 
-14:43 - nodemon
-16:52 - Rendering html
-18:15 - Static
-21:38 - REST API
-23:53 - Middleware
-31:10 - Get Single Member
+
+8. nodemon
+- You can edit your script in the package.json to use seperate script an run it with the name you want it
+example:  "scripts": {
+    "start": "node index",
+    "dev":"nodemon index"
+  },
+
+- Devdependendcis:
+npm i -D nodemon
+npm run dev 
+
+
+9. Rendering html
+
+
+
+
+10. Static
+You can create an static folder and help you don't need too much file
+
+
+11. REST API
+create your own api and view to see it in postman
+'/api/members' very commom
+res.json(members) turn into json data
+
+12. Middleware example
+const logger = (req, res, next) => {
+    console.log('Hello');
+    next();
+}
+syntax
+
+bonus package: moment handling date and time api
+
+13. Get Single Member
+example of url parameter
+app.get('/api/member/:id') 
+
+The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).
+
+  const found =members.some(member=> member.id === parseInt(req.params.id)) 
+  some method return true or fasle
+
 37:24 - Express Router
 41:20 - Create Member
 50:10 - Update Member
