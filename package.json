@@ -1,0 +1,23 @@
+{
+  "name": "express-crash-course",
+  "version": "1.0.0",
+  "description": "1. What is Express and Why use it - Very fast, unpopinionated and minimalist web framwork for Node,js esieer us for both server rendered apps light, fast free full controll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NhanKhangJ/express-crash-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NhanKhangJ/express-crash-course/issues"
+  },
+  "homepage": "https://github.com/NhanKhangJ/express-crash-course#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
