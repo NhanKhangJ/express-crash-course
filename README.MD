@@ -109,8 +109,13 @@ A router object is an isolated instance of middleware and routes. You can think 
 use post method and body parser to translate the data from the request
 
 
-50:10 - Update Member
-55:48 - Delete Member
+16. - Update Member
+use put method to update the Membber
+
+
+17. - Delete Member
+
+
 57:54 - Rendering Templates using express-handlebars
 1:07:00 - Forms
 

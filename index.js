@@ -8,6 +8,8 @@ const app = express();
 // app.use(logger);
 
 //Body Parser to translate data from the post request
+app.use(express.json());
+app.use(express.urlencoded({ extended: false})); 
 
 
 
