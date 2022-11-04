@@ -101,8 +101,14 @@ The parseInt() function parses a string argument and returns an integer of the s
   const found =members.some(member=> member.id === parseInt(req.params.id)) 
   some method return true or fasle
 
-37:24 - Express Router
-41:20 - Create Member
+14. - Express Router
+A router object is an isolated instance of middleware and routes. You can think of it as a “mini-application,” capable only of performing middleware and routing functions. Every Express application has a built-in app router.
+
+
+15. - Create Member
+use post method and body parser to translate the data from the request
+
+
 50:10 - Update Member
 55:48 - Delete Member
 57:54 - Rendering Templates using express-handlebars
