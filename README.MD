@@ -114,8 +114,11 @@ use put method to update the Membber
 
 
 17. - Delete Member
+use delete method to delete the memeber
 
+18. - Rendering Templates using express-handlebars
+another package from npm
+create handlebars file and {{{}}} syntax
 
-57:54 - Rendering Templates using express-handlebars
 1:07:00 - Forms
 
